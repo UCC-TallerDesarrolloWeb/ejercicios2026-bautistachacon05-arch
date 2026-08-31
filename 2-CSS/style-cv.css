@@ -1,0 +1,25 @@
+.main-style{
+            text-align: center;
+            background: linear-gradient(to right,rgba(161, 152, 24, 0.479),rgb(79, 47, 105));
+            
+        }
+        h3{
+            font-family: "Asap Sharp", sans-serif;
+            text-shadow: 10px 8px rgba(19, 49, 180, 0.5);
+        }
+        div{
+            border: 1px solid rgb(0, 0, 0);
+            margin:15px;
+            padding: 10px 25px 12px;
+            background-color: rgba(94, 62, 121, 0.349);
+            border-radius: 15px 30px 50px 100px;
+            box-shadow: 10px 8px rgba(151, 175, 17, 0.521);
+
+        }
+        #user{
+            width: 10%;
+            float: left;
+            border-radius: 50%;
+        }
+
+    

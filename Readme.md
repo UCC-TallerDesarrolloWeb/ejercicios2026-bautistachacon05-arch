@@ -30,10 +30,10 @@
 -  [ ] Multimedia
 
 ### CSS
--  [ ] Propiedades tipográficas
+-  [] Propiedades tipográficas
 -  [x] Incrustado
 -  [x] Estilo con Descendientes
--  [ ] Pseudo Clases
+-  [x] Pseudo Clases
 -  [ ] CV
 -  [ ] Backgrounds
 -  [ ] Position
