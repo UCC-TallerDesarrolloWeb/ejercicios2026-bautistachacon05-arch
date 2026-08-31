@@ -9,32 +9,32 @@
 # Checklist de Ejercicios OBLIGATORIOS por unidad
 
 ## Unidad 1: Introducción y Herramientas de Desarrollo
--  [ ] Readme.md
--  [ ] .gitignore
+-  [x] Readme.md
+-  [x] .gitignore
 
 ## Unidad 2: Fundamentos de HTML5 y CSS3
 
 ### HTML
--  [ ] Primer HTML
--  [ ] Secciones
--  [ ] Títulos
--  [ ] Listas
--  [ ] Link
--  [ ] Tablas I
--  [ ] Tablas II
--  [ ] Tablas III
--  [ ] Tablas VI
--  [ ] Comentarios
--  [ ] Formulario
+-  [x] Primer HTML
+-  [x] Secciones
+-  [x] Títulos
+-  [x] Listas
+-  [x] Link
+-  [x] Tablas I
+-  [x] Tablas II
+-  [x] Tablas III
+-  [x] Tablas VI
+-  [x] Comentarios
+-  [x] Formulario
 -  [ ] Accesibilidad
 -  [ ] Multimedia
 
 ### CSS
--  [ ] Propiedades tipográficas
--  [ ] Incrustado
--  [ ] Estilo con Descendientes
--  [ ] Pseudo Clases
--  [ ] CV
+-  [] Propiedades tipográficas
+-  [x] Incrustado
+-  [x] Estilo con Descendientes
+-  [x] Pseudo Clases
+-  [x] CV
 -  [ ] Backgrounds
 -  [ ] Position
 -  [ ] 2 Columnas
