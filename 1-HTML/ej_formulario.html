@@ -20,49 +20,50 @@
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
 <form name="form suscripcion">
     <p>
-Nombre:<input type ="text" name="nombre" placeholder="ingrese su nombre">
+<label for="Nombre">nombre:></label><input type ="text" name="nombre" placeholder="ingrese su nombre" id="nombre">
 </p>
 <p>
-Apellido:<input type="text" name="apellido" placeholder="ingrese su apellido">
+<label for="Apellido">Apellido:</label><input type="text" name="apellido" placeholder="ingrese su apellido" id="Apellido">
 </p>
 <p>
 Genero:
-Masculino:<input type="radio" name= "gender" value="Masculino">
-Femenino:<input type="radio" name="gender" value="Femenino">
+<label for="masculino">Masculino:</label><input type="radio" name= "gender" value="Masculino" id="masculino">
+<label for="femenino">Femenino:</label><input type="radio" name="gender" value="Femenino" id="femenino">
 </p>
 <p>
-Edad:<input type="number" name="edad" placeholder="edad">
+<label for="edad">Edad:</label><input type="number" name="edad" placeholder="edad" id="edad">
 </p>
 <p>
-Email:<input type="email" name="email" placeholder="usuario@dominio.com">
+<label for="email">Email:</label><input type="email" name="email" placeholder="usuario@dominio.com" id="email">
 </p>
 <p>
-Usuario:<input type="text" name="usuario" placeholder="usuario">
+<label for="usuario">Usuario:</label><input type="text" name="usuario" placeholder="usuario" id="usuario">
 </p>
 <p>
-Password:<input type="password" name="password" placeholder="contraseña">
+<label for="password">Password:</label><input type="password" name="password" placeholder="contraseña" id="password">
 </p>
 <p>
-Confirmar Password:<input type="password" name="segunda password" placeholder="contraseña">
+<label for="confirmar password">Confirmar Password:</label><input type="password" name="segunda password" placeholder="contraseña" id="confirmar password">
 </p>
-Tipo de servicio:
-<select name="tipo servicio">
+<label for="tipo de servicio">Tipo de servicio:</label>
+<select name="tipo servicio" id="tipo de servicio">
     <p> 
     <option value="Free">free></option>
     <option value="Standard">standar</option>
     <option value="Premium">premium</option>
     </p>
+    
 </select>
 <p>
 Tema:
-Política <input type="checkbox" value="politica">
-Negocios<input type="checkbox" value="negocios">
-Tecnología<input type="checkbox" value="tecnologia">
-Salud<input type="checkbox" value="salud">
+<label for="politica">Política</label> <input type="checkbox" value="politica" id="politica">
+<label for="negocios">Negocios<input type="checkbox" value="negocios" id="negocios"></label>
+<label for="tecnologia">Tecnología<input type="checkbox" value="tecnologia" id="tecnologia"></label>
+<label for="salud">Salud<input type="checkbox" value="salud" id="salud"></label>
 </p>
 <p>
-Agregue un comentario:
-<textarea name="comentario" id>
+<label for="comentario">Agregue un comentario:</label>
+<textarea name="comentario" id="comentario">
     agregue un comentario..
 </textarea>
 </p>
