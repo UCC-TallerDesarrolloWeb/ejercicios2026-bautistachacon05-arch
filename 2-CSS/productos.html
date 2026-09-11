@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>catalogo de producto</title>
+        <link rel="stylesheet" href="catalogo.css" type="text/css">
+
+    </head>
+    <body class="grid-container">
+        <header class="item1">
+            catalogo de productos
+        </header>
+            <nav class="item2">
+                <a href="productos.html">catalogo de productos</a>
+                <a href="">carrito de compras</a>
+            </nav>
+            <aside class="item3">
+                <form name="filtrer">
+                    <fieldset>
+                        <legend>busqueda</legend>
+                        <label for="search">buscar:</label>
+                        <input type="text" name="search" id="search">
+                    </fieldset>
+                    <fieldset>
+                        <legend>precios:</legend>
+                        <p>
+                        <label>minimo</label>
+                        <input type="number"id="minimo" name="precio-min" min="0">
+                        </p>
+                        <p>
+                           <label for="maimo">maximo:</label> 
+                           <input type="number" id="maximo" name="precio-max" min="0">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                         <legend>tipo de productos:</legend>
+                        <p>
+                           <input type="checkbox" id="protectores " name="tipo" value="producto">
+                           <label for="protectores">protectores</label>
+
+                        </p>
+                        <p>
+                            <input type="checkbox" name="tipo" id="entrenamiento" value="entrenamiento">
+                            <label for="entrenamiento">entrenamiento</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="tipo" id="dobok" value="dobok">
+                            <label for="dobok">dobok</label>
+                        </p>
+                    </fieldset>
+                </form>
+            </aside>
+        
+        <main class="item4">
+          <div>
+            <img src="../3-Js/images/cabezal cerrado.webp" alt="cabezal cerrado">
+            <h3>cabezal</h3>
+          </div>
+          <div> 
+          <img src="../3-Js/images/foco con dedos" alt="foco con dedos">
+            <h3>foco con dedos</h3>
+          </div>
+          <div>  
+          <img src="../3-Js/images/protectores-manos.webp" alt="protectores de manos">
+            <h3>protectores de manos</h3>
+          </div>   
+          <div>  
+          <img src="../3-Js/images/protectores-pie" alt="protectores de pies">
+            <h3>protectores de pies</h3>
+          </div>  
+          <div>  
+          <img src="../3-Js/images/dobok" alt="dobok">
+            <h3>dobok</h3>
+            </div>  
+            <div>
+          <img src="../3-Js/images/escudo-potencia.webp" alt="escudo de potencia">
+            <h3>escudo de potencia</h3>  
+          </div>  
+        </main>
+        <footer class="item5">
+            contacto
+        </footer>
+    </body>
+
+</html>
