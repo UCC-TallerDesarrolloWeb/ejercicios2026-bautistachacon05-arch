@@ -73,6 +73,9 @@ let cargarproducto = () => {
         <button type="button" onclick="mostrarmodal(${id})">
           Ver detalles del producto
         </button>
+        <button type="button" onclick="agregaralcarrito(${id})">
+        Agregar al carrito
+        </button>
       </div>
     `;
   });
@@ -80,6 +83,19 @@ let cargarproducto = () => {
 
   
 };
+let agregaralcarrito=(id)=>{
+let carritolist=localStorage.getItem("carrito");
+if (carritolist==null) {
+  carritolist=[];
+  
+}else{
+carritolist=JSON.parse(carritolist);
+}
+carritolist.push(id);
+console.log(carritolist);
+localStorage.setItem("carrito",JSON.stringify(carritolist));
+}
+
 let mostrarmodal=(id)=>{
   document.getElementById("titulo-producto").innerText=productos[id].nombre;
   document.getElementById("descripcion-producto").innerText=productos[id].description;
@@ -87,4 +103,22 @@ let mostrarmodal=(id)=>{
 }
 let cerrarmodal=()=>{
     document.getElementById("modal").style.display="none";
+}
+let cargarcarrito=()=>{
+let carritolist=localStorage.getItem("carrito");
+let contenido="";
+
+if (carritolist==null) {
+  contenido="<div>Su carrito esta vacio</div>"
+  
+}else{
+  carritolist=JSON.parse(carritolist);
+  carritolist.forEach((num)=>{
+    contenido+=`<div> 
+    <h3>${productos[num].nombre}</h3>
+    <p>${productos[num].precio}</p>
+    </div>`;
+  })
+}
+document.getElementById("mostrar-carrito").innerHTML=contenido;
 }
