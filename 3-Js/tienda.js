@@ -61,7 +61,7 @@ const productos = [
     imagen: "protectores-pies.webp",
   },
 ];
-let cargarProducto = () => {
+let cargarproducto = () => {
   let contenido = "";
 
   productos.forEach((elemento, id) => {
@@ -70,7 +70,7 @@ let cargarProducto = () => {
         <img src="imagen/${elemento.imagen}" alt="${elemento.nombre}">
         <h3>${elemento.nombre}</h3>
         <p>${elemento.precio}</p>
-        <button type="button" onclick="mostrarmodal()">
+        <button type="button" onclick="mostrarmodal(${id})">
           Ver detalles del producto
         </button>
       </div>
@@ -80,7 +80,9 @@ let cargarProducto = () => {
 
   
 };
-let mostrarmodal=()=>{
+let mostrarmodal=(id)=>{
+  document.getElementById("titulo-producto").innerText=productos[id].nombre;
+  document.getElementById("descripcion-producto").innerText=productos[id].description;
     document.getElementById("modal").style.display="block";
 }
 let cerrarmodal=()=>{

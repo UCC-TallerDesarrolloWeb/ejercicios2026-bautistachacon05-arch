@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="catalogo.css" type="text/css">
         <script type="text/javascript" src="tienda.js"></script>
     </head>
-    <body class="grid-container" onload="cargarProducto()">
+    <body class="grid-container" onload="cargarproducto()">
         <header class="item1">
             catalogo de productos
         </header>
@@ -51,8 +51,8 @@
             </aside>
             <dialog id="modal">
                 <h2>Detalles del producto</h2>
-                <h3>Cabezal cerrado</h3>
-                <p>Cabezal de sparring, Disponible del talle 1 al 3 en color rojo y azul</p>
+                <h3 id="titulo-producto">Cabezal cerrado</h3>
+                <p id="descripcion-producto">Cabezal de sparring, Disponible del talle 1 al 3 en color rojo y azul</p>
                 <button type="button" onclick="cerrarmodal()">Cerrar</button>
                 <button type="button" onclick="mostrarmodal()">
                 ver detalles del producto
