@@ -3,9 +3,9 @@
     <head>
         <title>catalogo de producto</title>
         <link rel="stylesheet" href="catalogo.css" type="text/css">
-        <script type="text/javascript" src="funciones.js"></script>
+        <script type="text/javascript" src="tienda.js"></script>
     </head>
-    <body class="grid-container">
+    <body class="grid-container" onload="cargarProducto()">
         <header class="item1">
             catalogo de productos
         </header>
@@ -34,7 +34,7 @@
                     <fieldset>
                          <legend>tipo de productos:</legend>
                         <p>
-                           <input type="checkbox" id="protectores " name="tipo" value="producto">
+                           <input type="checkbox" id="protectores " name="tipo" value="protectores">
                            <label for="protectores">protectores</label>
 
                         </p>
@@ -49,41 +49,22 @@
                     </fieldset>
                 </form>
             </aside>
-        
-        <main class="item4">
             <dialog id="modal">
                 <h2>Detalles del producto</h2>
                 <h3>Cabezal cerrado</h3>
                 <p>Cabezal de sparring, Disponible del talle 1 al 3 en color rojo y azul</p>
                 <button type="button" onclick="cerrarmodal()">Cerrar</button>
-            </dialog>
-          <div>
-            <img src="../3-Js/images/cabezal cerrado.webp" alt="cabezal cerrado">
-            <h3>cabezal</h3>
-            <button type="button" onclick="mostrarmodal()">
+                <button type="button" onclick="mostrarmodal()">
                 ver detalles del producto
             </button>
-          </div>
-          <div> 
-          <img src="../3-Js/images/foco con dedos" alt="foco con dedos">
-            <h3>foco con dedos</h3>
-          </div>
-          <div>  
-          <img src="../3-Js/images/protectores-manos.webp" alt="protectores de manos">
-            <h3>protectores de manos</h3>
-          </div>   
-          <div>  
-          <img src="../3-Js/images/protectores-pie" alt="protectores de pies">
-            <h3>protectores de pies</h3>
-          </div>  
-          <div>  
-          <img src="../3-Js/images/dobok" alt="dobok">
-            <h3>dobok</h3>
-            </div>  
-            <div>
-          <img src="../3-Js/images/escudo-potencia.webp" alt="escudo de potencia">
-            <h3>escudo de potencia</h3>  
-          </div>  
+            </dialog>
+        
+        <main class="item4" id="mostrar-catalogo">
+            
+          
+            
+          
+          
         </main>
         <footer class="item5">
             contacto
