@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>catalogo de producto</title>
+        <link rel="stylesheet" href="catalogo.css" type="text/css">
+        <script type="text/javascript" src="tienda.js"></script>
+    </head>
+    <body class="grid-container" onload="cargarproducto()">
+        <header class="item1">
+            catalogo de productos
+        </header>
+            <nav class="item2">
+                <a href="productos.html">catalogo de productos</a>
+                <a href="Carrito.html">carrito de compras</a>
+            </nav>
+            <aside class="item3">
+                <form name="filtrer">
+                    <fieldset>
+                        <legend>busqueda</legend>
+                        <label for="search">buscar:</label>
+                        <input type="text" name="search" id="search">
+                    </fieldset>
+                    <fieldset>
+                        <legend>precios:</legend>
+                        <p>
+                        <label>minimo</label>
+                        <input type="number"id="minimo" name="precio-min" min="0">
+                        </p>
+                        <p>
+                           <label for="maimo">maximo:</label> 
+                           <input type="number" id="maximo" name="precio-max" min="0">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                         <legend>tipo de productos:</legend>
+                        <p>
+                           <input type="checkbox" id="protectores " name="tipo" value="protectores">
+                           <label for="protectores">protectores</label>
+
+                        </p>
+                        <p>
+                            <input type="checkbox" name="tipo" id="entrenamiento" value="entrenamiento">
+                            <label for="entrenamiento">entrenamiento</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="tipo" id="dobok" value="dobok">
+                            <label for="dobok">dobok</label>
+                        </p>
+                    </fieldset>
+                </form>
+            </aside>
+            <dialog id="modal">
+                <h2>Detalles del producto</h2>
+                <h3 id="titulo-producto">Cabezal cerrado</h3>
+                <p id="descripcion-producto">Cabezal de sparring, Disponible del talle 1 al 3 en color rojo y azul</p>
+                <button type="button" onclick="cerrarmodal()">Cerrar</button>
+                <button type="button" onclick="mostrarmodal()">
+                ver detalles del producto
+            </button>
+            </dialog>
+        
+        <main class="item4" id="mostrar-catalogo">
+            
+          
+            
+          
+          
+        </main>
+        <footer class="item5">
+            contacto
+        </footer>
+    </body>
+
+</html>

@@ -58,6 +58,67 @@ const productos = [
     talle: ["XXS", "XS", "S", "M", "L", "XL"],
     precio: 35000,
     web: "https://www.daedo.com/collections/collection-itf-gloves/products/pritf-2022",
-    imagen: "protectores-manos.webp",
+    imagen: "protectores-pies.webp",
   },
 ];
+let cargarproducto = () => {
+  let contenido = "";
+
+  productos.forEach((elemento, id) => {
+    contenido += `
+      <div>
+        <img src="imagen/${elemento.imagen}" alt="${elemento.nombre}">
+        <h3>${elemento.nombre}</h3>
+        <p>${elemento.precio}</p>
+        <button type="button" onclick="mostrarmodal(${id})">
+          Ver detalles del producto
+        </button>
+        <button type="button" onclick="agregaralcarrito(${id})">
+        Agregar al carrito
+        </button>
+      </div>
+    `;
+  });
+  document.getElementById("mostrar-catalogo").innerHTML=contenido;
+
+  
+};
+let agregaralcarrito=(id)=>{
+let carritolist=localStorage.getItem("carrito");
+if (carritolist==null) {
+  carritolist=[];
+  
+}else{
+carritolist=JSON.parse(carritolist);
+}
+carritolist.push(id);
+console.log(carritolist);
+localStorage.setItem("carrito",JSON.stringify(carritolist));
+}
+
+let mostrarmodal=(id)=>{
+  document.getElementById("titulo-producto").innerText=productos[id].nombre;
+  document.getElementById("descripcion-producto").innerText=productos[id].description;
+    document.getElementById("modal").style.display="block";
+}
+let cerrarmodal=()=>{
+    document.getElementById("modal").style.display="none";
+}
+let cargarcarrito=()=>{
+let carritolist=localStorage.getItem("carrito");
+let contenido="";
+
+if (carritolist==null) {
+  contenido="<div>Su carrito esta vacio</div>"
+  
+}else{
+  carritolist=JSON.parse(carritolist);
+  carritolist.forEach((num)=>{
+    contenido+=`<div> 
+    <h3>${productos[num].nombre}</h3>
+    <p>${productos[num].precio}</p>
+    </div>`;
+  })
+}
+document.getElementById("mostrar-carrito").innerHTML=contenido;
+}
